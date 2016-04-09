@@ -86,12 +86,8 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         } else if segue.identifier == "descSeg" {
             if let destVC = segue.destinationViewController as? DescVC {
                 let index = sender.tag
-                let array = movies[index]
-                    let title = array.title
-                    let desc = array.desc
-                destVC.tit = title!
-                destVC.des = desc!
-                
+                destVC.index = index!
+               
             }
         }
     }

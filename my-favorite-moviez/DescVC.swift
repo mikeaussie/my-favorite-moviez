@@ -17,21 +17,49 @@ class DescVC: UIViewController {
     @IBOutlet weak var storyLbl: UILabel!
     @IBOutlet weak var webLbl: UILabel!
     
-    var tit = ""
-    var des = ""
+    var index = 0
+    var movies: [Movies]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
-
+    
+    func fetchAndSetResults() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Movies")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            
+            self.movies = results as! [Movies]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        let title = tit; let desc = des
-        print(title)
-        print(desc)
+        fetchAndSetResults()
+        fillTheView()
+ 
+    }
+    
+    func fillTheView() {
+        let array = movies[index]
+        let story = array.story
+        let title = array.title
+        let desc = array.desc
+        let web = array.web
+                //print("getTheData function is operational")
+        storyLbl.text = story
+        titleLbl.text = title
+        descLbl.text = desc
+        webLbl.text = web
         
     }
+    
     
     @IBAction func backBtn(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)

@@ -554,6 +554,13 @@
                             <constraint firstItem="yqg-Y5-7US" firstAttribute="centerX" secondItem="k8d-1M-JbY" secondAttribute="centerX" id="yDR-Gi-p7K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descLbl" destination="rwW-cK-N9y" id="hae-iq-msb"/>
+                        <outlet property="movieImg" destination="yqg-Y5-7US" id="iTe-Sc-1dl"/>
+                        <outlet property="storyLbl" destination="as1-JT-FYg" id="Sh2-RJ-vAM"/>
+                        <outlet property="titleLbl" destination="44c-tl-Yd2" id="qrB-37-fuP"/>
+                        <outlet property="webLbl" destination="lgL-xA-chL" id="gGh-jS-ahy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLX-uk-DMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
