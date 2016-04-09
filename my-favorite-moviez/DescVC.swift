@@ -57,6 +57,7 @@ class DescVC: UIViewController {
         titleLbl.text = title
         descLbl.text = desc
         webLbl.text = web
+        movieImg.image = array.getMovieImg()
         
     }
     
