@@ -175,10 +175,10 @@
             </objects>
             <point key="canvasLocation" x="340" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--Web ViewVC-->
         <scene sceneID="TRT-T8-4iR">
             <objects>
-                <viewController id="uNJ-Fo-Li7" sceneMemberID="viewController">
+                <viewController id="uNJ-Fo-Li7" customClass="WebViewVC" customModule="my_favorite_moviez" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JfC-wT-gG9"/>
                         <viewControllerLayoutGuide type="bottom" id="e2x-6I-B51"/>
@@ -209,6 +209,9 @@
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtn:" destination="uNJ-Fo-Li7" eventType="touchUpInside" id="27L-Ln-3oi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85490196080000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
@@ -427,10 +430,10 @@
             </objects>
             <point key="canvasLocation" x="1099" y="-124"/>
         </scene>
-        <!--View Controller-->
+        <!--DescVC-->
         <scene sceneID="23s-bX-hNX">
             <objects>
-                <viewController id="Xo5-hw-vTD" sceneMemberID="viewController">
+                <viewController id="Xo5-hw-vTD" customClass="DescVC" customModule="my_favorite_moviez" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zJf-x9-GfZ"/>
                         <viewControllerLayoutGuide type="bottom" id="oQw-DR-Zie"/>
@@ -461,6 +464,9 @@
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtn:" destination="Xo5-hw-vTD" eventType="touchUpInside" id="ynn-Fd-f8w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85490196080000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
