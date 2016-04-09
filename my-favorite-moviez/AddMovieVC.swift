@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -37,7 +38,35 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     }
     
     @IBAction func addMovie(sender: AnyObject) {
+        if let title = titleLbl.text where title != "" {
+            if movieImg.image != nil {
+            
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            let entity = NSEntityDescription.entityForName("Movies", inManagedObjectContext: context)!
+            let movie = Movies(entity: entity, insertIntoManagedObjectContext: context)
+            
+            movie.title = titleLbl.text
+            movie.desc = descLbl.text
+            movie.story = storyLbl.text
+            movie.web = webLbl.text
+            movie.setMovieImg(movieImg.image!)
+            
+            context.insertObject(movie)
+            
+            do {
+                try context.save()
+            } catch {
+                print("Unable to save a movie")
+            }
+        }
         
         
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    }
+    
+    @IBAction func backBtn(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

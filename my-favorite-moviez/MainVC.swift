@@ -23,8 +23,23 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.dataSource = self
     }
 
+    func fetchAndSetResults() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Movies")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            self.movies = results as! [Movies]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
+        fetchAndSetResults()
         tableView.reloadData()
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
