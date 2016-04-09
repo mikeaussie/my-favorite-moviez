@@ -16,7 +16,8 @@ class MoviezCell: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var webLbl: UILabel!
-    
+    @IBOutlet weak var webBtn: UIButton!
+    @IBOutlet weak var descBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

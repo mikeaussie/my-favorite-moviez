@@ -55,6 +55,8 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if let cell = tableView.dequeueReusableCellWithIdentifier("MoviezCell") as? MoviezCell {
             let moviez = movies[indexPath.row]
             cell.configureCell(moviez)
+                cell.webBtn.tag = indexPath.row
+                cell.descBtn.tag = indexPath.row
             
             return cell
         } else {
@@ -72,7 +74,26 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+
+        if segue.identifier == "webSeg" {
+            if let destVC = segue.destinationViewController as? WebViewVC {
+                let index = sender.tag
+                let array = movies[index]
+                let web = array.web
+                destVC.web = web!
+            }
+        } else if segue.identifier == "descSeg" {
+            if let destVC = segue.destinationViewController as? DescVC {
+                let index = sender.tag
+                let array = movies[index]
+                    let title = array.title
+                    let desc = array.desc
+                destVC.tit = title!
+                destVC.des = desc!
+                
+            }
+        }
+    }
 }
 

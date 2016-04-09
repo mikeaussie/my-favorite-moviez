@@ -10,6 +10,7 @@ import UIKit
 
 class WebViewVC: UIViewController {
 
+    var web = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,10 @@ class WebViewVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewDidAppear(animated: Bool) {
+        let rec = web
+        print(rec)
+    }
     
 
     @IBAction func backBtn(sender: AnyObject) {

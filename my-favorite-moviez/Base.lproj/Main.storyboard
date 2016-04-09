@@ -64,7 +64,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-Nl-Bqg" userLabel="webBtn">
                                                     <rect key="frame" x="91" y="92" width="501" height="27"/>
                                                     <connections>
-                                                        <segue destination="uNJ-Fo-Li7" kind="show" id="xbU-EA-w9b"/>
+                                                        <segue destination="uNJ-Fo-Li7" kind="show" identifier="webSeg" id="xbU-EA-w9b"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-sU-s3o" userLabel="descBtn">
@@ -73,7 +73,7 @@
                                                         <constraint firstAttribute="height" constant="89" id="2o5-Uw-Ush"/>
                                                     </constraints>
                                                     <connections>
-                                                        <segue destination="Xo5-hw-vTD" kind="show" id="I0z-gV-5HT"/>
+                                                        <segue destination="Xo5-hw-vTD" kind="show" identifier="descSeg" id="I0z-gV-5HT"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -101,9 +101,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="descBtn" destination="8lG-sU-s3o" id="JkN-1C-Fut"/>
                                             <outlet property="descLbl" destination="Fqd-Jh-VFO" id="sez-SH-LXJ"/>
                                             <outlet property="movieImg" destination="235-Ki-nKi" id="Jne-9u-9tn"/>
                                             <outlet property="titleLbl" destination="XTk-kj-uBC" id="VuO-8T-Dek"/>
+                                            <outlet property="webBtn" destination="QGm-Nl-Bqg" id="XUX-ay-fVt"/>
                                             <outlet property="webLbl" destination="R5U-uq-abf" id="dx5-19-snF"/>
                                         </connections>
                                     </tableViewCell>

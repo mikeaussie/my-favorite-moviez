@@ -17,6 +17,8 @@ class DescVC: UIViewController {
     @IBOutlet weak var storyLbl: UILabel!
     @IBOutlet weak var webLbl: UILabel!
     
+    var tit = ""
+    var des = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,12 @@ class DescVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        let title = tit; let desc = des
+        print(title)
+        print(desc)
+        
+    }
     
     @IBAction func backBtn(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
