@@ -16,6 +16,7 @@
 		A2B25B801CB8DA1700B413A6 /* MoviezCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B25B7F1CB8DA1700B413A6 /* MoviezCell.swift */; };
 		A2B25B831CB8DC9100B413A6 /* Movies+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B25B811CB8DC9100B413A6 /* Movies+CoreDataProperties.swift */; };
 		A2B25B841CB8DC9100B413A6 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B25B821CB8DC9100B413A6 /* Movies.swift */; };
+		A2F1028B1CBA69F500B306F4 /* UrbanJungleDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2F1028A1CBA69F500B306F4 /* UrbanJungleDEMO.otf */; };
 		A2F2C09C1CB90007000E326F /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2C09B1CB90007000E326F /* AddMovieVC.swift */; };
 		A2F2C0A01CB9004A000E326F /* DescVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2C09F1CB9004A000E326F /* DescVC.swift */; };
 		A2F2C0A21CB9E4C4000E326F /* WebLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2C0A11CB9E4C4000E326F /* WebLoadVC.swift */; };
@@ -33,6 +34,7 @@
 		A2B25B7F1CB8DA1700B413A6 /* MoviezCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviezCell.swift; sourceTree = "<group>"; };
 		A2B25B811CB8DC9100B413A6 /* Movies+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movies+CoreDataProperties.swift"; path = "../Movies+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A2B25B821CB8DC9100B413A6 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movies.swift; path = ../Movies.swift; sourceTree = "<group>"; };
+		A2F1028A1CBA69F500B306F4 /* UrbanJungleDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UrbanJungleDEMO.otf; sourceTree = "<group>"; };
 		A2F2C09B1CB90007000E326F /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
 		A2F2C09F1CB9004A000E326F /* DescVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescVC.swift; sourceTree = "<group>"; };
 		A2F2C0A11CB9E4C4000E326F /* WebLoadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoadVC.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				A2B25B671CB8D6E300B413A6 /* AppDelegate.swift */,
 				A2B25B711CB8D6E300B413A6 /* Assets.xcassets */,
 				A2B25B731CB8D6E300B413A6 /* LaunchScreen.storyboard */,
+				A2F1028A1CBA69F500B306F4 /* UrbanJungleDEMO.otf */,
 				A2B25B761CB8D6E300B413A6 /* Info.plist */,
 				A2B25B6E1CB8D6E300B413A6 /* my_favorite_moviez.xcdatamodeld */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F1028B1CBA69F500B306F4 /* UrbanJungleDEMO.otf in Resources */,
 				A2B25B751CB8D6E300B413A6 /* LaunchScreen.storyboard in Resources */,
 				A2B25B721CB8D6E300B413A6 /* Assets.xcassets in Resources */,
 				A2B25B6D1CB8D6E300B413A6 /* Main.storyboard in Resources */,

@@ -5,6 +5,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="UrbanJungleDEMO.otf">
+            <string>UrbanJungleDEMO</string>
+            <string>UrbanJungleDEMO</string>
+            <string>UrbanJungleDEMO</string>
+            <string>UrbanJungleDEMO</string>
+            <string>UrbanJungleDEMO</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -139,12 +148,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MOVIEZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jl-45-zgU">
-                                        <rect key="frame" x="229" y="26" width="142" height="32"/>
+                                        <rect key="frame" x="204" y="8" width="167" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="142" id="cCq-Dq-k5X"/>
-                                            <constraint firstAttribute="height" constant="32" id="eFD-F2-WB9"/>
+                                            <constraint firstAttribute="width" constant="167" id="cCq-Dq-k5X"/>
+                                            <constraint firstAttribute="height" constant="50" id="eFD-F2-WB9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="UrbanJungleDEMO" family="Urban Jungle" pointSize="40"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -168,7 +177,7 @@
                                     <constraint firstAttribute="height" constant="80" id="WZc-ur-5Ny"/>
                                     <constraint firstItem="4jl-45-zgU" firstAttribute="centerX" secondItem="v1x-6c-j20" secondAttribute="centerX" id="Yzj-7A-QVK"/>
                                     <constraint firstAttribute="trailing" secondItem="g93-fN-AoH" secondAttribute="trailing" constant="8" id="lwZ-VE-85V"/>
-                                    <constraint firstItem="4jl-45-zgU" firstAttribute="centerY" secondItem="v1x-6c-j20" secondAttribute="centerY" id="qP3-vO-jO5"/>
+                                    <constraint firstItem="4jl-45-zgU" firstAttribute="centerY" secondItem="v1x-6c-j20" secondAttribute="centerY" constant="15" id="qP3-vO-jO5"/>
                                     <constraint firstAttribute="bottom" secondItem="g93-fN-AoH" secondAttribute="bottom" constant="8" id="zrf-T1-lX9"/>
                                 </constraints>
                             </view>
@@ -211,12 +220,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add a New Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwl-ZB-uXi">
-                                        <rect key="frame" x="229" y="26" width="142" height="32"/>
+                                        <rect key="frame" x="145" y="18" width="226" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="142" id="Pjs-iE-FiR"/>
-                                            <constraint firstAttribute="height" constant="32" id="eM3-zN-kue"/>
+                                            <constraint firstAttribute="width" constant="220" id="Pjs-iE-FiR"/>
+                                            <constraint firstAttribute="height" constant="40" id="eM3-zN-kue"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="UrbanJungleDEMO" family="Urban Jungle" pointSize="25"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -238,7 +247,7 @@
                                 <color key="backgroundColor" red="1" green="0.85490196080000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="4fA-q6-bfk" secondAttribute="bottom" constant="8" id="BKV-Yd-E1l"/>
-                                    <constraint firstItem="qwl-ZB-uXi" firstAttribute="centerY" secondItem="NTj-s6-bUw" secondAttribute="centerY" id="PVg-pW-TUZ"/>
+                                    <constraint firstItem="qwl-ZB-uXi" firstAttribute="centerY" secondItem="NTj-s6-bUw" secondAttribute="centerY" constant="15" id="PVg-pW-TUZ"/>
                                     <constraint firstItem="4fA-q6-bfk" firstAttribute="leading" secondItem="NTj-s6-bUw" secondAttribute="leading" constant="8" id="QRG-7K-hY5"/>
                                     <constraint firstItem="qwl-ZB-uXi" firstAttribute="centerX" secondItem="NTj-s6-bUw" secondAttribute="centerX" id="X4S-Vk-ULv"/>
                                     <constraint firstAttribute="height" constant="80" id="zLW-Mi-jJO"/>
@@ -277,6 +286,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Xrb-5F-021"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="UrbanJungleDEMO" family="Urban Jungle" pointSize="15"/>
                                 <state key="normal" title="New Movie"/>
                                 <connections>
                                     <action selector="addMovie:" destination="2fK-y7-58a" eventType="touchUpInside" id="riC-UL-PQq"/>
@@ -393,7 +403,7 @@
                                             <constraint firstAttribute="height" constant="32" id="N9o-Rn-l4u"/>
                                             <constraint firstAttribute="width" constant="142" id="fuP-Ig-uAc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="UrbanJungleDEMO" family="Urban Jungle" pointSize="25"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -415,7 +425,7 @@
                                 <color key="backgroundColor" red="1" green="0.85490196080000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="fgz-dH-dh5" secondAttribute="bottom" constant="8" id="0He-6R-VKy"/>
-                                    <constraint firstItem="Xoz-fC-RSZ" firstAttribute="centerY" secondItem="obi-Pn-Gls" secondAttribute="centerY" id="3fK-Am-P2m"/>
+                                    <constraint firstItem="Xoz-fC-RSZ" firstAttribute="centerY" secondItem="obi-Pn-Gls" secondAttribute="centerY" constant="15" id="3fK-Am-P2m"/>
                                     <constraint firstAttribute="height" constant="80" id="jlM-sJ-N4N"/>
                                     <constraint firstItem="fgz-dH-dh5" firstAttribute="leading" secondItem="obi-Pn-Gls" secondAttribute="leading" constant="8" id="nJP-Zf-Ntu"/>
                                     <constraint firstItem="Xoz-fC-RSZ" firstAttribute="centerX" secondItem="obi-Pn-Gls" secondAttribute="centerX" id="wvv-lo-ife"/>
@@ -540,7 +550,7 @@
                                             <constraint firstAttribute="height" constant="32" id="aQk-FV-ek7"/>
                                             <constraint firstAttribute="width" constant="142" id="wOy-H1-ZQx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="UrbanJungleDEMO" family="Urban Jungle" pointSize="25"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -566,7 +576,7 @@
                                     <constraint firstAttribute="bottom" secondItem="iRo-ep-9qv" secondAttribute="bottom" constant="8" id="cE5-AB-M7X"/>
                                     <constraint firstItem="mDp-Ig-9nH" firstAttribute="centerX" secondItem="OCG-GM-tzS" secondAttribute="centerX" id="dZe-zZ-oVM"/>
                                     <constraint firstItem="iRo-ep-9qv" firstAttribute="leading" secondItem="OCG-GM-tzS" secondAttribute="leading" constant="8" id="e86-R9-KbP"/>
-                                    <constraint firstItem="mDp-Ig-9nH" firstAttribute="centerY" secondItem="OCG-GM-tzS" secondAttribute="centerY" id="sia-Ne-Yqi"/>
+                                    <constraint firstItem="mDp-Ig-9nH" firstAttribute="centerY" secondItem="OCG-GM-tzS" secondAttribute="centerY" constant="15" id="sia-Ne-Yqi"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvy-Eb-afm">
