@@ -52,7 +52,7 @@ class DescVC: UIViewController {
         let title = array.title
         let desc = array.desc
         let web = array.web
-                //print("getTheData function is operational")
+                
         storyLbl.text = story
         titleLbl.text = title
         descLbl.text = desc

@@ -77,11 +77,11 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
 
         if segue.identifier == "webSeg" {
-            if let destVC = segue.destinationViewController as? WebViewVC {
+            if let destVC = segue.destinationViewController as? WebLoadVC {
                 let index = sender.tag
                 let array = movies[index]
                 let web = array.web
-                destVC.web = web!
+                    destVC.webPath = web!
             }
         } else if segue.identifier == "descSeg" {
             if let destVC = segue.destinationViewController as? DescVC {
