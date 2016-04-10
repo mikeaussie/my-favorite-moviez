@@ -115,7 +115,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-Ug-w61">
                                 <rect key="frame" x="0.0" y="560" width="600" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-Gu-OMu">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-Gu-OMu">
                                         <rect key="frame" x="450" y="2" width="71" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ahY-QC-Eyx"/>
@@ -154,6 +154,7 @@
                                             <constraint firstAttribute="height" constant="30" id="8IR-9x-Weq"/>
                                             <constraint firstAttribute="width" constant="89" id="OXL-4j-VBk"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Add New">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -225,6 +226,7 @@
                                             <constraint firstAttribute="height" constant="30" id="JE7-yJ-fM4"/>
                                             <constraint firstAttribute="width" constant="89" id="vmS-sN-01w"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -401,6 +403,7 @@
                                             <constraint firstAttribute="height" constant="30" id="2P5-yb-Y9J"/>
                                             <constraint firstAttribute="width" constant="89" id="ZMP-VH-nY0"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -547,6 +550,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Y8O-c7-ZFf"/>
                                             <constraint firstAttribute="width" constant="89" id="bO1-sH-gLo"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
